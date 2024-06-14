@@ -7,6 +7,7 @@
   "license": "GPL-3.0-or-later",
   "scripts": {
     "create:local": "graph create pnc/exchange-v3-lite --node http://127.0.0.1:8020",
+    "remove:local": "graph remove pnc/exchange-v3-lite --node http://127.0.0.1:8020",
     "template": "mustache ../../../config/$NETWORK.js subgraph.template.yaml > subgraph.yaml && mustache ../../../config/$NETWORK.js utils/constants.template.ts > utils/constants.ts && mustache ../../../config/$NETWORK.js utils/pricing.template.ts > utils/pricing.ts",
     "auth": "graph auth --product hosted-service SUBGRAPH_KEY",
     "codegen": "graph codegen subgraph.yaml",
