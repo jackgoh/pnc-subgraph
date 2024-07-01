@@ -6,7 +6,7 @@
   "author": "PancakeSwap",
   "license": "GPL-3.0-or-later",
   "scripts": {
-    "create:local": "graph create pnc/blocks--node http://127.0.0.1:8020",
+    "create:local": "graph create pnc/blocks --node http://127.0.0.1:8020",
     "remove:local": "graph remove pnc/blocks --node http://127.0.0.1:8020",
     "codegen": "graph codegen subgraph.yaml",
     "build": "graph build subgraph.yaml",
